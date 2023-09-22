@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #1abc9c); /* Gradient background */
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.conditions {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll if needed */
+    max-width: 100%; /* Ensure the container fits the screen width */
+    flex-wrap: nowrap; /* Prevent button wrapping to the next line */
+}
+
+.condition {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.condition:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.condition img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.condition h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for conditions */
+@media screen and (max-width: 768px) {
+    .condition {
+        width: calc(50% - 20px); /* 2 columns for smaller screens */
+    }
+}

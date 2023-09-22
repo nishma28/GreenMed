@@ -1,0 +1,100 @@
+/* Reset some default styles */
+/* Reset some default styles */
+body, h1, h2, p, ul, li, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #1abc9c);
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Updated styles for the feature cards */
+.feature-cards {
+    display:inline;
+   row-gap: 10px;
+     /* Gap between cards */
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card img {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Styles for the feature buttons (optional) */
+.feature-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-button img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-button h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Responsive design for feature buttons (optional) */
+@media screen and (max-width: 768px) {
+    .feature-cards {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
+}

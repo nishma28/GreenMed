@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(11, 10, 10, 0.6) 0%, rgba(14, 15, 13, 0.8) 100%);
+
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the feature section */
+.feature {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.feature-button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.upload-button {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.upload-button input[type="file"] {
+    display: none;
+}
+
+.upload-button label {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Style for the results section */
+.results {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.results h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
